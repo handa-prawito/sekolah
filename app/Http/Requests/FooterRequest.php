@@ -34,7 +34,7 @@ class FooterRequest extends FormRequest
                 'whatsapp'      => ['required','numeric'],
                 'telp'          => ['required','numeric'],
                 'email'         => ['required','email'],
-                'desc'          => [new MaxCharacters(200), 'required'],
+                'desc'          => ['required'],
             ];
         }
     }

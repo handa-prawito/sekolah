@@ -28,7 +28,7 @@ class EventRequest extends FormRequest
         if ($this->method() == 'POST') {
             return [
                 'title'     => ['required', Rule::unique('events', 'title')->whereNull('deleted_at')],
-                'desc'      => [new maxCharacters(200), 'required'],
+                'desc'      => ['required'],
                 'content'   => ['required'],
                 'acara'     => ['required'],
                 'lokasi'    => ['required'],
@@ -38,7 +38,7 @@ class EventRequest extends FormRequest
 
         return [
             'title'     => ['required'],
-            'desc'      => [new maxCharacters(200), 'required'],
+            'desc'      => [, 'required'],
             'content'   => ['required'],
             'acara'     => ['required'],
             'lokasi'    => ['required'],
