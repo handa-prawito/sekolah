@@ -8,6 +8,7 @@
     <title>@yield('title')</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="UzARnpBKGr484cE58oTucQvHy3f0u0epTGmbZwiDpig" />
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     @include('layouts.Frontend.style')

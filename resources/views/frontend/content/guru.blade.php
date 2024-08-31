@@ -14,13 +14,14 @@
                             <h3 class="item-title"><a href="#">{{$pengajars->name}}</a></h3>
                             <span class="item-designation">{{$pengajars->userDetail->mengajar}}</span>
                             <ul class="lecturers-social">
-                                <li><a href="{{$pengajars->userDetail->website}}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-                                <li><a href="mailto:{{$pengajars->email}}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                <li><a href="{{'https://www.linkedin.com/in',$pengajars->linkedln}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="{{'https://www.twitter.com/',$pengajars->twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="{{'https://www.facebook.com/',$pengajars->facebook}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="{{'https://www.instagram.com/',$pengajars->instagram}}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="{{ $pengajars->userDetail->website }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                                <li><a href="mailto:{{ $pengajars->email }}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                                <li><a href="{{ 'https://www.linkedin.com/in/' . $pengajars->linkedln }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="{{ 'https://www.twitter.com/' . $pengajars->twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="{{ 'https://www.facebook.com/' . $pengajars->facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="{{ 'https://www.instagram.com/' . $pengajars->instagram }}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Frontend\MenuController;
 use App\Http\Controllers\Frontend\IndexController;
@@ -146,5 +147,9 @@ Route::middleware('auth')->group(function () {
         Route::get('/ranking', [RangkingController::class, 'index'])->name('rankingAdmin');
         Route::get('/ranking/create', [RangkingController::class, 'create'])->name('rankingAdmin.create');
     });
+});
+
+Route::get('/symlink', function () {
+    Artisan::call('storage:link');
 });
 
